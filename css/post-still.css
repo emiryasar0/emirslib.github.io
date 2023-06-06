@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(19, 33, 46);
+    color: white;
+    text-align: center;
+    /* Yazılar ortalanacak */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Gereksiz öğelerin gizlenmesi */
+.fully-load-image,
+.item,
+.parallax-window {
+    display: none;
+}
+
+.content {
+    border: 2px solid #f1751b;
+    /* Çerçeve eklenmesi */
+    padding: 20px;
+    /* İçerik içinde boşluk oluşturulması */
+    margin-top: 20px;
+    display: inline-block;
+    /* İçeriğin yan yana hizalanması */
+    position: relative;
+    /* Pozisyon belirleme */
+    width: 800px;
+    /* Sabit bir genişlik belirleme */
+    max-width: 100%;
+    /* Maksimum genişlik ayarı */
+    text-align: left;
+    /* Yazıları sola hizala */
+}
+
+.content img {
+    display: block;
+    margin: 0 auto 20px;
+    /* İmajın altında boşluk oluşturulması */
+    width: 100%;
+    max-width: 845px;
+    height: auto;
+}
+
+.content .back-button:before {
+    content: "\2190";
+    font-size: 20px;
+    color: rgb(19, 33, 46);
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.alt-menu {
+    position: relative;
+    z-index: 1;
+}
+
+.content ul li:before {
+    content: "\2022";
+    color: #f1751b;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+h1 {
+    text-align: center;
+    /* Patch notes başlığını ortala */
+}
+
+h2 {
+    text-align: center;
+    /* Singleplayer başlığını ortala */
+}
+
+i {
+    color: wheat;
+}
+
+footer {
+    clear: both;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0c0c0d;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    height: 100px;
+}

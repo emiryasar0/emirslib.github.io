@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main-menu-still.css">
+    <link rel="stylesheet" type="text/css" href="css/post-still.css">
+    <script src="js/script.js"></script>
+    <title>Emir's Library | Loose Coupling</title>
+</head>
+
+<body class="news-item-body">
+    <nav class="nav">
+        <ul>
+            <li><a id="anasayfabtn" href="index.html">Ana Sayfa</a></li>
+            <li><a id="hizmetlerbtn" href="#">Hizmetler</a></li>
+            <li><a id="hakkimizdabtn" href="#">Hakkımda</a></li>
+            <li><a id="egitimbtn" href="#">Eğitimler</a>
+                <ul class="alt-menu">
+                    <li>
+                        <a href="#">C#</a>
+                        <ul class="sub-alt-menu">
+                            <li><a href="csharp-prensipler-tüm-dersler.html">Prensipler</a></li>
+                            <li><a href="unity-tüm-dersler.html">Unity</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">C++</a>
+                        <ul class="sub-alt-menu">
+                            <li><a href="#">Arduino</a></li>
+                            <li><a href="#">Oyun Geliştirme</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="wrapper clearfix">
+                <div class="col-lg-8 col-lg-push-4 col-md-8 col-md-push-4 col-sm-8 col-sm-push-4 col-xs-12 post-detail">
+                    <div class="content">
+                        <img src="images/loosecoupling.png" alt="Image">
+                        <div>
+                            <div>
+                                <h2 style="font-size: 30px; color: #42ffc6;">Loose Coupling Prensibi</h2>
+                            </div>
+                            <div><strong style="color: #f1751b; font-size: 25px;" font>Konu</strong></div>
+                            <p>
+                                Loose coupling, bir yazılım sistemine ait bileşenlerin, mümkün olduğunca bağımsız ve az
+                                bağımlı olarak tasarlandığı bir tasarım prensibidir. Bu prensibe göre, bir bileşenin iç
+                                yapısı ve uygulama mantığı diğer bileşenlerden mümkün olduğunca bağımsız olmalıdır.
+                                Böylece, bir bileşende yapılan değişiklikler diğer bileşenleri etkilemez ve sistemin
+                                daha esnek, sürdürülebilir ve bakımı kolay hale gelir.
+                                <br><br>
+                                <i> Gevşek bağlılığın temel avantajları şunlardır:</i>
+                                <br><br>
+                                <strong style="color: #ffd23e;">Bağımsız geliştirme:</strong> Bileşenlerin
+                                birbirlerinden bağımsız olarak geliştirilmesi
+                                mümkündür. Her bileşen, kendi iç yapısını ve mantığını yönetebilir. Bu, farklı
+                                geliştirici ekiplerinin aynı anda çalışmasını ve değişiklikleri kolayca entegre etmesini
+                                sağlar.
+                                <br><br>
+                                <strong style="color: #ffd23e;">Kolay sürdürme:</strong> Bir bileşende yapılan
+                                değişiklikler, diğer bileşenleri etkilemez. Bu
+                                nedenle, bir bileşenin sürdürülmesi veya güncellenmesi gerektiğinde, diğer bileşenlere
+                                minimum düzeyde müdahale etmek mümkündür. Bu da bakım sürecini basitleştirir ve
+                                potansiyel hataları azaltır.
+                                <br><br>
+                                <strong style="color: #ffd23e;">Yeniden kullanılabilirlik:</strong> Gevşek bağlılık,
+                                bileşenlerin başka projelerde veya farklı
+                                sistemlerde yeniden kullanılmasını kolaylaştırır. Bağımsız bileşenler, diğer projelerde
+                                uyumlu bir şekilde kullanılabilecek özelliklere sahip olabilir.
+                                <br><br>
+                                <strong style="color: #ffd23e;">Esneklik:</strong> Bileşenler arasındaki gevşek
+                                bağlantılar, sistemde değişiklikler yapmayı
+                                kolaylaştırır. Bir bileşende yapılan bir değişiklik, diğer bileşenlere minimum düzeyde
+                                etki eder ve sistemdeki değişikliklerin daha hızlı ve güvenli bir şekilde uygulanmasına
+                                olanak sağlar.
+                                <br><br>
+                                <i>Gevşek bağlılığı sağlamak için bazı tasarım prensipleri ve teknikler
+                                    kullanılabilir:</i>
+                                <br><br>
+                                <strong style="color: #ffd23e;">Arabirimler:</strong> Bileşenler arasında iletişim
+                                sağlamak için soyutlamalar kullanılır. Her
+                                bileşen, diğer bileşenlere belirli bir arabirim üzerinden erişir ve iletişim kurar. Bu
+                                arabirimler, bileşenlerin iç yapısını gizler ve bağımlılıkları en aza indirir.
+                                <br><br>
+                                <strong style="color: #ffd23e;">Olay tabanlı iletişim:</strong> Bileşenler arasında
+                                olaylar veya mesajlar kullanılarak iletişim
+                                kurulur. Bir bileşen, diğer bir bileşene bir olayı veya mesajı gönderir ve diğer bileşen
+                                bu olaya tepki verir. Bu şekilde, bileşenler arasındaki doğrudan bağlantı en aza
+                                indirilir.
+                                <br><br>
+                                <strong style="color: #ffd23e;">Bağımlılık enjeksiyonu:</strong> Bağımlılık enjeksiyonu,
+                                bir bileşenin dışarıdan diğer
+                                bileşenlerle olan bağlantısını enjekte ettiği bağımlılıkları kullanarak sağlar. Bu
+                                şekilde, bileşenin hangi diğer bileşenlerle çalışacağı esnek bir şekilde belirlenebilir.
+                                <br><br>
+                                <strong style="color: #ffd23e;">İzleme (Observing):</strong> Bileşenler, diğer
+                                bileşenlerin durumunu izlemek için izleme
+                                mekanizmalarını kullanabilir. Böylece, bir bileşende meydana gelen değişiklikler, diğer
+                                bileşenler tarafından tespit edilebilir ve buna göre tepki verilebilir.
+                                <br><br>
+                                Gevşek bağlılık, genellikle büyük ve karmaşık yazılım sistemlerinin tasarımında
+                                tercih
+                                edilen bir prensiptir. Bu, sistemlerin daha modüler, esnek ve ölçeklenebilir
+                                olmasını
+                                sağlar. Ancak, gevşek bağlılık da bazı dezavantajlar getirebilir, örneğin iletişim
+                                ve
+                                veri paylaşımının zorlaşması veya performans sorunları gibi sorunlar ortaya
+                                çıkabilir.
+                                Bu nedenle, tasarımda doğru bir denge sağlanmalı ve sistem gereksinimlerine göre
+                                uygun
+                                bağlantı düzeyi seçilmelidir.
+                                <br><br>
+                            </p>
+                            <div><strong style="color: #f1751b; font-size: 25px;">Örneklendirme</strong></div>
+                            <p>
+                                <i> Öğrenmenin bir diğer yolu ise örneklendirmelerdir. Şimdi çeşitli şekillerde
+                                    örnekleme
+                                    yaparak durumu daha iyi anlamanızı sağlamaya çalışacağım.</i>
+
+                                <br><br>
+                                Örneğin bir telefon düşünün ve bu telefonun birinizi GSM üzerinden aramanız için bir
+                                operatör (Sim Kart) ihtiyacı bulunuyor. Eğer ki tek bir operatör'e bağlı ise bu "Tight
+                                Coupling"
+                                oluyor. Eğer herhangi bir operatör'e ihtiyacı varsa o zaman "Loose Coupling" oluyor. Yine
+                                bağımlılık söz konusu fakat olabildiğince esnetmeye çalışıyoruz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Telif Hakkı &copy; 2023 EmirsLib. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>
